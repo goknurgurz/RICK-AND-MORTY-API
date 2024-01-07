@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@300&family=Lato&family=Montserrat&family=Nunito+Sans:opsz,wght@6..12,300;6..12,800&family=Oswald:wght@300&family=Roboto+Condensed:wght@300&family=Shadows+Into+Light&display=swap');
+
+body{
+    font-family: 'Dosis', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right, rgb(26, 137, 173)  , rgb(14, 170, 14));
+}
+.search{
+    position: relative;
+}
+
+.searchInput{
+    font-family:'dosis', sans-serif;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7K8Kl7zJiHj5zojX_qbBNtGHvTGdYcHnuQUzJZLlTFeFUAaf-_x2lGFp0qFNN20UHXlw&usqp=CAU);
+
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    padding: 15px;
+    height: 10px;
+    width: 15px;
+    border-radius: 10px;
+    background: transparent; /* gizlemesi icin */
+    transition: width 0.3s ease;
+
+}
+.searchBtn,
+.searchInput:focus{
+outline: none;
+}
+.searchBtn{
+    background-color: yellowgreen;
+  border: none;
+    color: aliceblue;
+    font-size: 2.3rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+/* toggle aktiflestigi zaman
+search divine active ekledik ve css o sekilde alicaz */
+
+.search.active .searchInput{
+width: 200px;
+background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7K8Kl7zJiHj5zojX_qbBNtGHvTGdYcHnuQUzJZLlTFeFUAaf-_x2lGFp0qFNN20UHXlw&usqp=CAU);
+
+}
+
+/* butonu saga alma */
+
+.search.active .searchBtn{
+transform: translateX(182px);
+background-color: transparent;
+color:lightsalmon
+
+}
+.rmContainer{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%; 
+}
+.rmHidden{
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnTKXf5FT-v_0L_CEZC00QnnfG3AbIDiyrjg&usqp=CAU) ;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: rgba(28, 200, 108, 0.17) 90px -23px 25px 30px inset,
+    rgba(41, 54, 201, 0.15) 0px -36px 30px 0px inset,
+    rgba(107, 224, 5, 0.1) 0px -79px 40px 0px inset, rgba(229, 46, 96, 0.06) 0px 2px 1px,
+    rgba(105, 2, 43, 0.09) 0px 4px 2px, rgba(51, 26, 213, 0.09) 0px 8px 4px,
+    rgba(235, 4, 200, 0.09) 0px 16px 8px, rgba(242, 48, 18, 0.09) 0px 32px 16px;
+    color: #1f0202;
+    border-radius: 45px 15px;
+ }
+.imgContainer img{
+    border-radius: 75% 30% 60% 40% / 60% 40% 60% 40%;
+    width: 180px;
+  opacity: 0.80;
+  transition: all 0.3s ease;
+}
+.rmHidden:hover .imgContainer img{
+    opacity: 1;
+    transform: scale(1.25);
+}
+.biInfo{
+    margin-top: 10px;
+
+}
+h3 {
+    color: #cbe4a4;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+font-style: oblique;
+font-weight: bold;
+    text-shadow: 4px 3px 6px rgba(0, 0, 0, 1);
+  }
+
+  .rmName {
+    letter-spacing: 2px;
+    margin: 15px 0 10px;
+    text-transform: capitalize;
+   
+  }
+  .biInfo small {
+    padding: 0 5px;
+  }
+.ikon{
+    margin-top: 15px;
+    color: aliceblue;
+  }
+
+  .rmId {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 3rem;
+    padding: 5px 10px;
+    font-size: 0.85rem;
+  }
